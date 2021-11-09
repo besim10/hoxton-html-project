@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+}
+main{
+    width: 100%;
+}
+h3{
+    font-weight: 100;
+}
+header{
+    display: grid;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    width: 95vw;
+}
+.top-menu{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    align-items: center;
+}
+.top-menu__item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.top-menu__item #about-us{
+    color: #c94350;
+    font-weight: 600;
+}
+.top-menu__item img{
+    width: 100px;
+}
+.welcome-page{
+    height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/cooking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 1rem;
+}
+.welcome-message{
+    color: white;
+    position: relative;
+    display: grid;
+    gap: 3rem;
+}
+.about-me{
+    background-color: #eae7de;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    padding: 2rem;
+    gap: 1rem;
+    justify-items: center;
+}
+.profile-pic{
+    border-radius: 50%;
+    max-width: 100%;
+    border: 5px solid #c94350;
+}
+.description{
+    border: 5px solid #c94350;
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    height: auto;
+}
+
+.description h1{
+    background-color: #c94350;
+    width: 100%;
+    text-align: center;
+}
+.description p{
+    padding: 1rem;
+}
+.social-icons{
+    background-color: #c94350;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center;
+    gap: 1rem;
+}
+.social-icons a{
+    display: grid;
+    padding: 0.2rem;
+}
+.social-icons img{
+    width: 30px;
+}
+footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/baking-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    padding: 1rem;
+    gap: 2rem;
+    place-content: center;
+    
+}
+.nav-list{
+    display: grid;
+    list-style: none;
+    gap: 0.5rem;
+    justify-items: center;
+}
+.nav-list__item{
+    color: rgb(255, 255, 255);
+}
+.nav-list__img{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+}
+.nav-list__item h3{
+    color: #c94350;
+    border-bottom: 1px solid rgba(212, 210, 210, 0.521);
+    text-transform: uppercase;
+}
+.nav-list__item img{
+    width: 25px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.copyright{
+    background-color: black;
+    padding: 0.7rem;
+    text-align: center;
+    color: white;
+}

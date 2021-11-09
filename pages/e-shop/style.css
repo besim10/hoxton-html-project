@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+}
+main{
+    width: 100vw;
+}
+h3{
+    font-weight: 100;
+}
+header{
+    display: grid;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    width: 95vw;
+}
+.top-menu{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    align-items: center;
+}
+.top-menu__item a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.top-menu__item #visit-our-shop{
+    color: #c94350;
+    font-weight: 600;
+}
+.top-menu__item img{
+    width: 100px;
+}
+.welcome-page{
+    height: 300px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/e-store.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    padding: 1rem;
+}
+.welcome-message{
+    color: white;
+    position: relative;
+    display: grid;
+    gap: 3rem;
+}
+.products{
+    padding: 1rem;
+    background-color: rgba(250, 128, 114, 0.205);
+    display: grid;
+    gap: 1rem;
+}
+.products h3,
+.products h5{
+    text-align: center;
+}
+.products_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    gap: 1rem;
+    justify-content: center;
+}
+.cake {
+    display: grid;
+    align-content: flex-end;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 5%;
+}
+.cake.cake-1{
+    background-image: url(/Images/cake-1.png);
+}
+.cake.cake-2{
+    background-image: url(/Images/cake-2.png);
+}
+.cake.cake-3{
+    background-image: url(/Images/cake-3.png);
+}
+.cake.cake-4{
+    background-image: url(/Images/cake-4.png);
+}
+.cake.cake-5{
+    background-image: url(/Images/cake-5.png);
+}
+.cake.cake-6{
+    background-image: url(/Images/cake-6.png);
+}
+.cake.cake-7{
+    background-image: url(/Images/cake-7.png);
+}
+.cake.cake-8{
+    background-image: url(/Images/cake-8.png);
+}
+.cake.cake-9{
+    background-image: url(/Images/cake-9.png);
+}
+.cake.cake-10{
+    background-image: url(/Images/cake-10.png);
+}
+.cake.cake-11{
+    background-image: url(/Images/cake-11.png);
+}
+.cake.cake-12{
+    background-image: url(/Images/cake-12.png);
+}
+
+.cake-description{
+    background-color: #c94350;
+}
+.all-products{ 
+    justify-content: center;
+    display: grid;
+    text-decoration: none;
+}
+.all-products span{
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.466);
+    font-size: 1.2rem;
+    padding: 0.3rem 2rem;
+    border-radius: 0.2rem;
+}
+footer{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/baking-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+footer nav{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,300px);
+    padding: 1rem;
+    gap: 2rem;
+    place-content: center;
+    
+}
+.nav-list{
+    display: grid;
+    list-style: none;
+    gap: 0.5rem;
+    justify-items: center;
+}
+.nav-list__item{
+    color: rgb(255, 255, 255);
+}
+.nav-list__img{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+}
+.nav-list__item h3{
+    color: #c94350;
+    border-bottom: 1px solid rgba(212, 210, 210, 0.521);
+    text-transform: uppercase;
+}
+.nav-list__item img{
+    width: 25px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.copyright{
+    background-color: black;
+    padding: 0.7rem;
+    text-align: center;
+    color: white;
+}
