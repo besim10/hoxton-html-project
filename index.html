@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="desktop-header">
         <nav>
             <ul class="top-menu">
                 <li class="top-menu__item">
@@ -25,6 +25,34 @@
                 </li>
                 <li class="top-menu__item">
                     <a href="./pages/e-shop/e-shop.html">Visit our E-shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <header class="mobile-header">
+        <nav>
+            <ul class="top-menu">
+                <li class="top-menu__item">
+                    <label class = "click-menu-activator" id="welcome"><img class="hamburger-icon"src="./Images/hamburger.svg" alt=""/>
+                    <input type="checkbox" hidden />
+
+                    <div class="click-menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#choose-section">Welcome</a></li>
+                                <li><a href="./pages/about/about.html">About</a></li>
+                                <li><a href="./pages/gallery/gallery.html">Gallery</a></li>
+                                <li><a href="./pages/e-shop/e-shop.html">E-shop</a></li>
+                            </ul>
+                        </nav>
+                    </div> 
+                    </label>
+                </li>
+                <li class="top-menu__item">
+                    <a href="#"><img src="./Images/cake-logo.png" alt="Albulena Cake logo"></a>
+                </li>
+                <li class="top-menu__item">
+                    <a href="./pages/e-shop/e-shop.html"><img class="bag-icon"src="./Images/bag-image.svg" alt=""></a>
                 </li>
             </ul>
         </nav>

@@ -20,7 +20,62 @@ main{
 h3{
     font-weight: 100;
 }
-header{
+.mobile-header{
+    padding: 0.5rem;
+    font-family: 'Zen Kurenaido', sans-serif;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    display: none;
+    z-index: 10;
+}
+.mobile-header .top-menu{
+    display: grid;
+    justify-content: space-between;
+}
+.mobile-header .top-menu__item a{
+    font-size: 1rem;
+}
+.mobile-header .bag-icon{
+    width: 20px;
+}
+.mobile-header .hamburger-icon{
+    width: 30px;
+}
+/*Click menu*/
+.click-menu-activator{
+    position: relative;
+}
+.click-menu{
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    top: 10vh;
+    left: 0vh;
+    right: 0vh;
+}
+.click-menu ul{
+    list-style: none;
+    padding: 0.5rem;
+}
+.click-menu ul li{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 1rem 0rem;
+    font-weight: 600;
+}
+.click-menu ul li a{
+    color: #c94350;
+}
+.click-menu ul li a:hover{
+    color: #ffffff;
+}
+.click-menu-activator input:checked ~ .click-menu{
+    visibility: visible;
+    opacity: 1;
+}
+.desktop-header{
     display: grid;
     justify-content: center;
     font-family: 'Zen Kurenaido', sans-serif;
@@ -39,6 +94,7 @@ header{
 .top-menu__item a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    font-size: 1.3rem;
 }
 .top-menu__item #about-us{
     color: #c94350;
@@ -68,14 +124,14 @@ header{
     background-color: #eae7de;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-    padding: 2rem;
+    padding: 1rem;
     gap: 1rem;
     justify-items: center;
     align-items: center;
 }
 .profile-pic{
     min-width: 250px;
-    border: 5px solid #c94350;
+    border: 3px solid #c943505b;
     display: grid;
     min-height: 250px;
     border-radius: 50%;
@@ -84,27 +140,27 @@ header{
     border-radius: 50%;
 }
 .description{
-    border: 5px solid #c94350;
+    border: 3px solid #c943505b;
     border-radius: 0.5rem;
     display: grid;
     place-items: center;
     gap: 1rem;
 }
 .description h1{
-    background-color: #c9435071;
     width: 100%;
     text-align: center;
+    border-bottom: 1px solid #c943505b;
 }
 .description p{
     padding: 1rem;
 }
 .social-icons{
-    background-color: #c9435071;
     width: 100%;
     display: grid;
     grid-auto-flow: column;
     place-content: center;
     gap: 1rem;
+    border-top: 1px solid #c943505b;
 }
 .social-icons a{
     display: grid;
@@ -160,4 +216,12 @@ footer nav{
     text-align: center;
     color: white;
     font-family: 'Zen Kurenaido', sans-serif;
+}
+@media screen and (max-width: 733px){
+    .mobile-header{
+        display: grid;
+    }
+    .desktop-header{
+        display: none;
+    }
 }
