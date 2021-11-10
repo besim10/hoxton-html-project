@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +8,11 @@
 html{
     scroll-behavior:smooth;
 }
+img{
+    width: 100%;
+}
 body{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Overlock', cursive;
 }
 main{
     width: 100%;
@@ -20,7 +23,7 @@ h3{
 header{
     display: grid;
     justify-content: center;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
     position: fixed;
     top: 2.5vw;
     left: 2.5vw;
@@ -68,11 +71,17 @@ header{
     padding: 2rem;
     gap: 1rem;
     justify-items: center;
+    align-items: center;
 }
 .profile-pic{
-    border-radius: 50%;
-    max-width: 100%;
+    min-width: 250px;
     border: 5px solid #c94350;
+    display: grid;
+    min-height: 250px;
+    border-radius: 50%;
+}
+.profile-pic img{
+    border-radius: 50%;
 }
 .description{
     border: 5px solid #c94350;
@@ -80,11 +89,9 @@ header{
     display: grid;
     place-items: center;
     gap: 1rem;
-    height: auto;
 }
-
 .description h1{
-    background-color: #c94350;
+    background-color: #c9435071;
     width: 100%;
     text-align: center;
 }
@@ -92,7 +99,7 @@ header{
     padding: 1rem;
 }
 .social-icons{
-    background-color: #c94350;
+    background-color: #c9435071;
     width: 100%;
     display: grid;
     grid-auto-flow: column;
@@ -101,7 +108,7 @@ header{
 }
 .social-icons a{
     display: grid;
-    padding: 0.2rem;
+    padding: 0.5rem;
 }
 .social-icons img{
     width: 30px;
@@ -111,6 +118,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Zen Kurenaido', sans-serif;
 }
 footer nav{
     display: grid;
@@ -151,4 +159,5 @@ footer nav{
     padding: 0.7rem;
     text-align: center;
     color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
 }

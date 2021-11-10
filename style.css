@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Overlock', cursive;
 }
 main{
     width: 100vw;
@@ -20,7 +20,7 @@ h3{
 header{
     display: grid;
     justify-content: center;
-    font-family: 'Signika Negative', sans-serif;
+    font-family: 'Zen Kurenaido', sans-serif;
     position: fixed;
     top: 2.5vw;
     left: 2.5vw;
@@ -126,7 +126,7 @@ header{
 } 
 .products{
     padding: 1rem;
-    background-color: rgba(250, 128, 114, 0.205);
+    background-color: #eae7de;
     display: grid;
     gap: 1rem;
 }
@@ -149,8 +149,8 @@ header{
     background-position: center;
     color: white;
     text-decoration: none;
-    border-top-left-radius: 25%;
-    border-top-right-radius: 25%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
 }
 .cake.first-cake{
     background-image: url(/Images/product-1.JPG);
@@ -173,8 +173,8 @@ header{
     text-decoration: none;
 }
 .all-products span{
-    background-color: #c94350;
-    color: rgb(0, 0, 0);
+    border: 1px solid #c94350;
+    color: #c94350;
     font-size: 1.2rem;
     padding: 0.3rem 2rem;
     border-radius: 0.2rem;
@@ -219,6 +219,7 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Zen Kurenaido', sans-serif;
 }
 footer nav{
     display: grid;
@@ -226,7 +227,6 @@ footer nav{
     padding: 1rem;
     gap: 2rem;
     place-content: center;
-    
 }
 .nav-list{
     display: grid;
@@ -259,4 +259,5 @@ footer nav{
     padding: 0.7rem;
     text-align: center;
     color: white;
+    font-family: 'Zen Kurenaido', sans-serif;
 }

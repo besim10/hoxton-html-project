@@ -8,11 +8,14 @@
 html{
     scroll-behavior:smooth;
 }
+img{
+    width: 100%;
+}
 body{
     font-family: 'Overlock', cursive;
 }
 main{
-    width: 100vw;
+    width: 100%;
 }
 h3{
     font-weight: 100;
@@ -37,7 +40,7 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.top-menu__item #visit-our-shop{
+.top-menu__item #gallery{
     color: #c94350;
     font-weight: 600;
 }
@@ -46,9 +49,10 @@ header{
 }
 .welcome-page{
     height: 300px;
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/e-store.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/cooking.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: grid;
     align-items: end;
     justify-items: center;
@@ -60,83 +64,34 @@ header{
     display: grid;
     gap: 3rem;
 }
-.products{
-    padding: 1rem;
+.gallery-section{
     background-color: #eae7de;
+    padding: 2rem 1rem;
     display: grid;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1.5rem;
 }
-.products h3,
-.products h5{
-    text-align: center;
-}
-.products_list{
+.photo-item{
+    width: 280px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,300px);
-    gap: 1rem;
-    justify-content: center;
-}
-.cake {
-    display: grid;
-    align-content: flex-end;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-decoration: none;
-    border-radius: 5%;
-}
-.cake.cake-1{
-    background-image: url(/Images/cake-1.png);
-}
-.cake.cake-2{
-    background-image: url(/Images/cake-2.png);
-}
-.cake.cake-3{
-    background-image: url(/Images/cake-3.png);
-}
-.cake.cake-4{
-    background-image: url(/Images/cake-4.png);
-}
-.cake.cake-5{
-    background-image: url(/Images/cake-5.png);
-}
-.cake.cake-6{
-    background-image: url(/Images/cake-6.png);
-}
-.cake.cake-7{
-    background-image: url(/Images/cake-7.png);
-}
-.cake.cake-8{
-    background-image: url(/Images/cake-8.png);
-}
-.cake.cake-9{
-    background-image: url(/Images/cake-9.png);
-}
-.cake.cake-10{
-    background-image: url(/Images/cake-10.png);
-}
-.cake.cake-11{
-    background-image: url(/Images/cake-11.png);
-}
-.cake.cake-12{
-    background-image: url(/Images/cake-12.png);
-}
-
-.cake-description{
-    background-color: #c94350;
-}
-.all-products{ 
-    justify-content: center;
-    display: grid;
-    text-decoration: none;
-}
-.all-products span{
-    background-color: #000000;
-    color: rgba(255, 255, 255, 0.466);
-    font-size: 1.2rem;
-    padding: 0.3rem 2rem;
+    grid-template-rows: auto 1fr;
     border-radius: 0.2rem;
+    border: 1px solid #c94350;
+}
+.photo{
+    display: grid;
+}
+.photo-description{
+    display: grid;
+    border-top: 1px solid #c94350;
+    grid-auto-flow: column;
+    place-items: center;
+    padding: 0.3rem;
+}
+.photo-description img{
+    width: 20px;
 }
 footer{
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/baking-image.jpg);
