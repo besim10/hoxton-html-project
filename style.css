@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Overlock&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    font-family: 'Overlock', cursive;
+    font-family: 'Cabin', sans-serif;
 }
 main{
     width: 100%;
@@ -19,7 +19,6 @@ h3{
 }
 .mobile-header{
     padding: 0.5rem;
-    font-family: 'Zen Kurenaido', sans-serif;
     background-color: black;
     position: sticky;
     top: 0;
@@ -61,6 +60,9 @@ h3{
     border-bottom: 1px solid rgb(255, 255, 255);
     padding: 1rem 0rem;
 }
+.click-menu ul li:last-child{
+    border-bottom: none;
+}
 .click-menu ul li a{
     color: #c94350;
 }
@@ -74,8 +76,7 @@ h3{
 .desktop-header{
     display: grid;
     justify-content: center;
-    font-family: 'Zen Kurenaido', sans-serif;
-    position: fixed;
+    position: absolute;
     top: 2.5vw;
     left: 2.5vw;
     width: 95vw;
@@ -87,11 +88,16 @@ h3{
     gap: 2rem;
     align-items: center;
 }
-
 .top-menu__item a{
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
+    display: block;
+    transition: 0.3s;
+}
+.top-menu__item a:hover{
+    color: #c94350;
+    transform: scale(1.2, 1.2);
 }
 .top-menu__item img{
     width: 100px;
@@ -122,18 +128,26 @@ h3{
     background-color: #c94350;
     font-size: 1.2rem;
     padding: 0.3rem 2rem;
+    box-shadow: 0px 0px 50px 5px white;
     text-decoration: none;
+    transition: 0.3s;
+}
+.welcome-message a:hover{
+    background-color: white;
+    color: #c94350;
 }
 .choose-category-page{
     background-color: #eae7de;
     padding: 1rem;
     display: grid;
-    align-content: start;
-    gap: 2rem;
+    align-content: center;
+    height: 100vh;
+    gap: 1rem;
 }
 .choose-category-page h3,
 .choose-category-page h1{
     text-align: center;
+    color: #c94350;
 }
 .category-items{
     display: grid;
@@ -142,10 +156,18 @@ h3{
     justify-content: center;
     height: 500px;
     padding: 1rem;
-    
+}
+.visit-store,
+.gallery,
+.about-us{
+    transition: 0.5s;
+}
+.visit-store:hover,
+.gallery:hover,
+.about-us:hover{
+    transform: scale(1.1,1.1);
 }
 .visit-store{
-    background-color: plum;
     display: grid;
     background:linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/cake2-background.jpg);
     background-repeat: no-repeat;
@@ -153,7 +175,7 @@ h3{
     background-position: center;
     place-content: center;
     text-decoration: none;
-    border-top-left-radius: 25%;
+    border-top-left-radius: 25%;   
 }
 .gallery{
     display: grid;
@@ -185,6 +207,12 @@ h3{
     display: grid;
     gap: 2rem;
 }
+.products h1{
+    color: #c94350;
+}
+.products h5{
+    font-weight: normal;
+}
 .products h1,
 .products h3,
 .products h5{
@@ -196,6 +224,10 @@ h3{
     gap: 1rem;
     justify-content: center;
 }
+.cake:hover{
+    transform: scale(1.1,1.1);
+}
+
 .cake {
     display: grid;
     align-content: flex-end;
@@ -209,18 +241,27 @@ h3{
 }
 .cake.first-cake{
     background-image: url(/Images/product-1.JPG);
+    transition: 1s;
 }
 .cake.second-cake{
     background-image: url(/Images/product-2.JPG);
+    transition: 1s;
 }
 .cake.third-cake{
     background-image: url(/Images/product-3.JPG);
+    transition: 1s;
 }
 .cake.fourth-cake{
     background-image: url(/Images/product-4.JPG);
+    transition: 1s;
 }
 .cake-description{
-    background-color: #c94350d0;
+    background-color: rgba(0, 0, 0, 0.699);
+    transition: 1s;
+}
+.all-products span:hover{
+    background-color: #c94350;
+    color: white;
 }
 .all-products{ 
     justify-content: center;
@@ -233,19 +274,19 @@ h3{
     font-size: 1.2rem;
     padding: 0.3rem 2rem;
     border-radius: 0.2rem;
+    transition: 0.5s;
 }
 .subsribe{
     background-color: #c94350;
     display: grid;
     place-content: center;
     justify-items: center;
-    padding: 1rem;
-    gap: 2rem;
+    padding: 2rem;
+    gap: 1rem;
 }
 .subsribe-info{
     display: grid;
     justify-items: center;
-    gap: 2rem;
 }
 form{
     display: inline-block;
@@ -272,23 +313,22 @@ footer{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    font-family: 'Zen Kurenaido', sans-serif;
 }
 footer nav{
     display: grid;
     grid-template-columns: repeat(auto-fit,300px);
-    padding: 1rem;
-    gap: 2rem;
+    gap: 1rem;
     place-content: center;
 }
 .nav-list{
     display: grid;
     list-style: none;
-    gap: 0.5rem;
     justify-items: center;
+    
 }
 .nav-list__item{
     color: rgb(255, 255, 255);
+    padding: 0.5rem;
 }
 .nav-list__img{
     display: grid;
@@ -297,7 +337,7 @@ footer nav{
 }
 .nav-list__item h3{
     color: #c94350;
-    border-bottom: 1px solid rgba(212, 210, 210, 0.521);
+    border-bottom: 1px solid rgb(255, 255, 255);
     text-transform: uppercase;
 }
 .nav-list__item img{
@@ -312,7 +352,6 @@ footer nav{
     padding: 0.7rem;
     text-align: center;
     color: white;
-    font-family: 'Zen Kurenaido', sans-serif;
 }
 @media screen and (max-width: 733px){
     .mobile-header{
