@@ -79,7 +79,7 @@ h3{
 .desktop-header{
     display: grid;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     top: 2.5vw;
     left: 2.5vw;
     width: 95vw;
@@ -139,21 +139,35 @@ h3{
     display: grid;
     grid-template-rows: auto 1fr;
     border-radius: 0.2rem;
-    border: 1px solid #c94350;
+    border: 1px solid #000000;
+    transition: 0.5s;
+}
+.photo-item:hover{
+    transform: scale(1.1,1.1);
 }
 .photo{
     display: grid;
 }
 .photo-description{
     display: grid;
-    border-top: 1px solid #c94350;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
     padding: 0.3rem;
+    background-color: #c4c4c4;
+    border-top: 1px solid #000000;
 }
-.photo-description img{
-    width: 20px;
+.thumbs-up, 
+.thumbs-down{
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+input[type="checkbox"]:checked ~ .thumbs-up,
+input[type="checkbox"]:checked ~ .thumbs-down{
+    fill:#3b6cd6;
+    transform: scale(1.2,1.2);
+}
+
 footer{
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(/Images/baking-image.jpg);
     background-repeat: no-repeat;

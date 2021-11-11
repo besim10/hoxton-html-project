@@ -257,7 +257,7 @@ h3{
 }
 .cake-description{
     background-color: rgba(0, 0, 0, 0.699);
-    transition: 1s;
+    transition: 0.8s;
 }
 .all-products span:hover{
     background-color: #c94350;

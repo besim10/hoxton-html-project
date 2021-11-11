@@ -76,7 +76,7 @@ h3{
 .desktop-header{
     display: grid;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     top: 2.5vw;
     left: 2.5vw;
     width: 95vw;
@@ -126,11 +126,14 @@ h3{
     padding: 1rem;
     background-color: #eae7de;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 .products h3,
 .products h5{
     text-align: center;
+}
+.products h3{
+    color: #c94350;;
 }
 .products_list{
     display: grid;
@@ -147,6 +150,11 @@ h3{
     color: white;
     text-decoration: none;
     border-radius: 5%;
+    transition: 0.8s;
+}
+.cake:hover{
+    transform: scale(1.2,1.2);
+    
 }
 .cake.cake-1{
     background-image: url(/Images/cake-1.png);
@@ -186,7 +194,7 @@ h3{
 }
 
 .cake-description{
-    background-color: #c94350;
+    background-color: rgb(0, 0, 0);
 }
 .all-products{ 
     justify-content: center;
