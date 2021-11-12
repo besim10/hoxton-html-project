@@ -13,8 +13,12 @@ img{
 body{
     font-family: 'Cabin', sans-serif;
 }
-main{
-    width: 100%;
+.back-to-top img{  
+    position: fixed;
+    bottom: 10px;
+    right: 5%;
+    width: 40px;
+    z-index: 10;
 }
 h3{
     font-weight: 100;
